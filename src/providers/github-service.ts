@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
@@ -10,7 +9,7 @@ import { User } from '../models/user.interface';
 @Injectable()
 export class GithubServiceProvider {
 
-  constructor(public http: HttpClient) {
+  constructor() {
     console.log('Hello GithubServiceProvider Provider');
   }
 
