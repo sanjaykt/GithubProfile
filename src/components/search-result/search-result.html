@@ -1,10 +1,15 @@
-
 <ion-item *ngIf="user" text-wrap>
-  <ion-avatar>
-    <img [src]="user.avatar_url" alt="">
-  </ion-avatar>
-  <h2>{{user.name}}</h2>
-  <h3>{{user.company}}</h3>
-  <p>{{user.location}}</p>
-  <p text-wrap>{{user.bio}}</p>
+  <ion-row>
+    <ion-col col-2>
+      <ion-avatar>
+        <img [src]="user.avatar_url" alt="">
+      </ion-avatar>
+    </ion-col>
+    <ion-col col-10 >
+      <h2>{{user.name}}</h2>
+      <h3>{{user.company}}</h3>
+      <p>{{user.location}}</p>
+      <p text-wrap>{{user.bio}}</p>
+    </ion-col>
+  </ion-row>
 </ion-item>
